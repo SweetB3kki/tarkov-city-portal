@@ -4,6 +4,7 @@ import { StatusBadge } from "@/components/status-badge"
 import { ServiceCard } from "@/components/service-card"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { InteractiveMap } from "@/components/interactive-map"
 import {
   Bus,
   Wind,
@@ -294,15 +295,10 @@ export default function HomePage() {
             <h2 className="font-heading text-3xl font-bold text-[rgb(var(--navy))] mb-6 text-balance">
               Интерактивная карта города
             </h2>
-            <div className="rounded-lg overflow-hidden border border-border bg-[rgb(var(--fog))] h-[400px] lg:h-[500px] flex items-center justify-center">
-              <div className="text-center text-[rgb(var(--steel))]">
-                <MapPin className="h-12 w-12 mx-auto mb-4 text-[rgb(var(--harbor))]" />
-                <p className="text-lg font-medium">Интерактивная карта</p>
-                <p className="text-sm">Основные объекты и маршруты города Тарков</p>
-              </div>
-            </div>
+            <InteractiveMap />
           </div>
         </section>
+
 
         {/* FAQ Section */}
         <section className="py-12 lg:py-16 bg-[rgb(var(--fog))]">
