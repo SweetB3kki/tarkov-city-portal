@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
+import { FaTelegramPlane, FaVk } from "react-icons/fa"
 
 const footerLinks = {
   services: [
@@ -93,18 +94,22 @@ export function Footer() {
 
             <div className="flex gap-3 mt-4">
               <a
-                href="#"
+                href="https://t.me/chomgus"
+                target="_blank"
+                rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-[rgb(var(--harbor))] hover:bg-[rgb(var(--amber))] hover:text-[rgb(var(--navy))] transition-colors"
-                aria-label="Facebook"
+                aria-label="Telegram"
               >
-                <Facebook className="h-4 w-4" />
+                <FaTelegramPlane className="h-4 w-4" />
               </a>
               <a
-                href="#"
+                href="https://vk.com/big_floppa"
+                target="_blank"
+                rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-[rgb(var(--harbor))] hover:bg-[rgb(var(--amber))] hover:text-[rgb(var(--navy))] transition-colors"
-                aria-label="Instagram"
+                aria-label="ВКонтакте"
               >
-                <Instagram className="h-4 w-4" />
+                <FaVk className="h-4 w-4" />
               </a>
             </div>
           </div>
